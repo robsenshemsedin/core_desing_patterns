@@ -1,5 +1,6 @@
 abstract class Planet {
   late String name;
-  late double distanceFromSun;
+  late String distanceFromSun;
   late double hoursInADay;
+  late String image;
 }

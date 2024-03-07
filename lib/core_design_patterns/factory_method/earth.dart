@@ -2,16 +2,14 @@ import 'package:core_desing_patterns/core_design_patterns/factory_method/factory
 
 class Earth implements Planet {
   @override
-  late double dayLength;
+  double hoursInADay = 24;
 
   @override
-  double distanceFromSun = 500;
+  String distanceFromSun = "149,600,000";
 
   @override
   String name = "Earth";
 
   @override
-  void setDayLength() {
-    // TODO: implement setDayLength
-  }
+  String image = 'assetPath';
 }
