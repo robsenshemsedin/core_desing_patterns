@@ -1,3 +1,4 @@
+import 'package:core_desing_patterns/core_design_patterns/abstract_factory/abstract_factory_export.dart';
 import 'package:core_desing_patterns/core_design_patterns/core_design_patterns_export.dart';
 import 'package:core_desing_patterns/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<CoreDesignPattern> coreDesignPatterns = [FactoryMethodPattern()];
+  final List<CoreDesignPattern> coreDesignPatterns = [
+    FactoryMethodPattern(),
+    AbstractFactorPattern()
+  ];
   int selectedIndex = 0;
   void selectCoreDesignPattern(int selectedValue) {
     setState(() {

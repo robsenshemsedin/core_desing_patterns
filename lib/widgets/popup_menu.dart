@@ -8,7 +8,6 @@ class PopupMenu extends StatelessWidget {
       {super.key,
       required this.coreDesingPatterns,
       required this.selectCoreDesignPattern});
-
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<int>(

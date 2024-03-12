@@ -1,0 +1,1 @@
+enum IntroTypes { defaultIntro, animatedIntro }

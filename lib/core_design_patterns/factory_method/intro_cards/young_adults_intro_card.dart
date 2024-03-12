@@ -1,4 +1,3 @@
-import 'package:core_desing_patterns/core_design_patterns/factory_method/factory_method_export.dart';
 import 'package:flutter/material.dart';
 
 class YoungAdultsIntroCard extends StatelessWidget {
@@ -25,7 +24,7 @@ class YoungAdultsIntroCard extends StatelessWidget {
         alignment: Alignment.topCenter,
         clipBehavior: Clip.none,
         children: [
-          Positioned(
+          const Positioned(
             top: -60,
             child: CircleAvatar(
               backgroundImage: AssetImage(
@@ -38,8 +37,8 @@ class YoungAdultsIntroCard extends StatelessWidget {
             top: 90,
             child: Container(
               color: Colors.black.withOpacity(0.6),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

@@ -1,18 +1,18 @@
 import 'package:core_desing_patterns/core_design_patterns/abstract_factory/abstract_factory_export.dart';
 
-class AdultIntroCreatorFactory implements IntroCardCreatorFactory {
+class ChildrenIntroCreatorFactory implements IntroCardCreatorFactory {
   @override
   AnimatedIntroCard animatedIntroCard() {
-    return AdultAnimatedIntroCard();
+    return ChildrenAnimatedIntroCard();
   }
 
   @override
   DefaultIntroCard defaultIntroCard() {
-    return AdultDefaultIntroCard();
+    return ChildrenDefaultIntroCard();
   }
 
   @override
   String ageGroup() {
-    return 'ADULT';
+    return 'CHILDREN';
   }
 }
