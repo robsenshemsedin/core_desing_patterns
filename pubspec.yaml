@@ -63,6 +63,7 @@ flutter:
     - assets/images/factory_method/adult/
     - assets/images/factory_method/children/
     - assets/images/factory_method/young_adult/
+    - assets/images/builder/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
