@@ -1,3 +1,4 @@
+import 'package:core_desing_patterns/constants/app_strings.dart';
 import 'package:core_desing_patterns/core_design_patterns/abstract_factory/abstract_factory_export.dart';
 import 'package:core_desing_patterns/core_design_patterns/builder/builder_export.dart';
 import 'package:core_desing_patterns/core_design_patterns/core_design_patterns_export.dart';
@@ -21,6 +22,7 @@ class _HomePageState extends State<HomePage> {
     BuilderDesignPattern(),
     DecoratorPattern()
   ];
+
   int selectedIndex = 0;
   void selectCoreDesignPattern(int selectedValue) {
     setState(() {
@@ -33,7 +35,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(designPatterns[selectedIndex]),
         actions: [
           PopupMenu(
             coreDesingPatterns: coreDesignPatterns,
